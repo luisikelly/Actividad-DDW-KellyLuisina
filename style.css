@@ -15,8 +15,13 @@ h3{
 body{
   font-family: "Lexend Deca", sans-serif;
   background-color: #FFFFFFFF;
+  width: 100%;
 }
-
+@media (max-width: 600px){
+  body{
+    width: 150%;
+  }
+}
 .header{
   display: flex;
   align-self: stretch;
