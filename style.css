@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Hubballi&family=Lexend+Deca:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');          
+a{
+  text-decoration: none;
+  color: #121216;
+}
 
 body{
   font-family: "Lexend Deca", sans-serif;
@@ -12,7 +16,7 @@ a{
 }
 
 footer{
-  display: in;
+  display: flex;
   justify-content:left;
   background: #ACBD78;
 }
@@ -32,6 +36,19 @@ nav ul li a{
   border-radius: 3px;
 }
 
+.burgerbtn{
+  flex-direction: column;
+  cursor: pointer;
+  
+}
+
+.line{
+  width: 30px ;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 5px 0;
+
+}
 .header{
   display: flex;
   align-self: stretch;
@@ -50,19 +67,6 @@ nav ul li a{
   height: 120px;
   object-fit: cover;
   z-index: 2;
-}
-
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
 }
 
 
@@ -166,7 +170,7 @@ margin-bottom: 10%;
   color:#FB8D0B;
 }
 
-.titulo-servicio{
+#titulo-servicio{
   color:#FB8D0B;
   font-size: 2rem;
   font-weight: bold;
@@ -296,39 +300,54 @@ border: 0;
 }
 
 
-@media (max-width: 952px){
-  .logo-header{
-      padding-left: 20px;
-  }
-  nav ul li a{
-      font-size: 16px;
-  }
+
+
+@media (max-width: 768px){
+ header, .inicio, .productos, .nosotros, .comprar, .comunidadAP, .puntosVenta, .contacto, .tienda{
+  width: 170%;
+ }
+
+ .titulo-seccion, .titulo-servicio{
+  font-size: 20px;
+ }
+
+ #subtitle{
+  font-size: 14px;
+ }
+  .navbar{
+  position: relative;
+ }
+.tipos-cervezas{
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 700px){
-  .checkbtn{
-      display: block;
+.tipos-cerveza{
+  width: 200px;
+  height: 300px ;
+  font-size: px;
+}
+ .burgerbtn{
+  display: none;
+  align-content:center
+ }
+ .navlinks{
+  display: none;
+  flex-direction: column;
+  position:absolute;
+  top: 100%;
+  background-color: #ACBD78;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  text-align: center;
+
   }
-  ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #ACBD78;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
+
+  .btn-servicio{
+    width: 227px;
+    height: 21px ;
+    font-size: 12px;
   }
-  nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-  }
-  nav ul li a{
-      font-size: 20px;
-  }
-  
-  #check:checked ~ ul{
-      left:0;
-  }
+ 
 }
