@@ -127,8 +127,12 @@ body{
 }
 
 .comprar{
-  background-color: #121216;
   margin: 0;
+  background-color: #222222;
+}
+.cerveza-icono{
+width: 200px;
+height: 200px;
 }
 
 .puntosVenta{
@@ -138,7 +142,33 @@ body{
 
 .comunidadAP{
 align-items: center;
-margin-bottom: 5%;
+margin-bottom: 10%;
+}
+
+.servicio{
+  display:flex;
+  align-items: center;
+  color:#FB8D0B;
+}
+
+.btn-servicio{
+ font-weight: bold;
+ background-color: #ACBD78;
+ margin-bottom: 2%;
+ width: 250px;
+ border-radius: 25%;
+}
+
+.content-btn{
+  color:#FFFFFF;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.APservicio{
+  color:#FB8D0B;
+  margin-bottom: 2%;
 }
 
 .images{
