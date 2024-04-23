@@ -151,12 +151,32 @@ margin-bottom: 10%;
   color:#FB8D0B;
 }
 
+.titulo-servicio{
+  color:#FB8D0B;
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+.nuestros-servicios{
+  color:#fbcf0b;
+}
 .btn-servicio{
  font-weight: bold;
  background-color: #ACBD78;
  margin-bottom: 2%;
  width: 250px;
- border-radius: 25%;
+ border-radius: 40px;
+
+ border: none;
+ color: white;
+ padding: 20px 34px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 20px;
+ margin: 4px 2px;
+ cursor: pointer;
 }
 
 .content-btn{
@@ -224,7 +244,6 @@ margin-bottom: 10%;
 }
 
 .contacto{
-background-color: #ACBD78;
 margin: 0;
 padding: 0;
 border: 0;
@@ -241,7 +260,7 @@ border: 0;
   height: 100px;
 }
 
-.suscribir{
+.btn{
   color: #FFFFFF;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
@@ -251,8 +270,10 @@ border: 0;
   border-color: #ACBD78;
 }
 
-.inputMail{
-  background-color: #acbd78ab;
+.input{
+  width: 200px;
+  height: 30px;
+  background-color: #acbd7888;
   border-radius: 40px;
   border-color: #acbd78ab;
 }
