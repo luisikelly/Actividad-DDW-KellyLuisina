@@ -37,6 +37,7 @@ nav ul li a{
 }
 
 .burgerbtn{
+  display: none;
   flex-direction: column;
   cursor: pointer;
   
