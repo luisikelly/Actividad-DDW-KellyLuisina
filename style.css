@@ -136,7 +136,7 @@ nav ul li a{
 }
 
 .nosotros-text-container{
-  margin-right: 20px;
+  margin: 20px;
   grid-column: 1;
   width: 70%;
 
@@ -352,5 +352,20 @@ border: 0;
     height: 21px ;
     font-size: 12px;
   }
- 
+  .nosotros-contenido{
+    display: flex;
+  }
+  
+  .nosotros-img{
+    width: 100px;
+    height: 300px;
+    border-radius: 2%;
+   }
+  
+  .nosotros-text-container{
+    margin: 5px;
+    width: 100%;
+  
+  }
+  
 }
