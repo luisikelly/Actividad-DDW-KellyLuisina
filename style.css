@@ -37,6 +37,7 @@ nav ul li a{
 }
 
 .burgerbtn{
+  display: none;
   flex-direction: column;
   cursor: pointer;
   
@@ -304,7 +305,7 @@ border: 0;
 
 @media (max-width: 768px){
  header, footer, .inicio, .productos, .nosotros, .comprar, .comunidadAP, .puntosVenta, .contacto, .tienda{
-  width: 200%;
+  width: 100%;
  }
 
  .titulo-seccion, .titulo-servicio{
