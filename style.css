@@ -352,5 +352,9 @@ border: 0;
     height: 21px ;
     font-size: 12px;
   }
- 
+ .img-nosotros{
+    width: 100px;
+    height: 300px;
+  
+ }
 }
