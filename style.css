@@ -231,3 +231,30 @@ border: 0;
   width: 100px;
   height: 100px;
 }
+
+.suscribir{
+  color: #FFFFFF;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: semi-bold;
+  text-align: center;
+  background-color: #ACBD78;
+  border-color: #ACBD78;
+}
+
+.inputMail{
+  background-color: #acbd78ab;
+  border-radius: 40px;
+  border-color: #acbd78ab;
+}
+
+.text-comunidad{
+  font-weight: 700;
+}
+.enterate{
+  color: #FB8D0B;
+}
+
+.ingresa-tu-mail{
+  color: #5D7123;
+}
