@@ -12,13 +12,22 @@
 <body>
     <header class="header">
         <img class="logo-header" alt="logoAltaPinta" src="recursos/logo.png" />
-        <div class="navbar">
-                <div class="nav-link"><a href="#productos" target="_self">Nuestras cervezas</a></div>
-                <div class="nav-link"><a href="#nosotros" target="_self">Conocenos</a></div>
-                <div class="nav-link"><a href="#comprar" target="_self">Pedi tu Alta Pinta</a></div>
-                <div class="nav-link"><a href="#comunidadAP" target="_self">Comunidad</a></div>
-                <div class="nav-link"><a href="#contacto" target="_self">Contacto</a></div>
-    </header>
+        <nav class="navbar">
+         <ul class="navlinks">
+                <li class="nav-link"><a href="#productos" target="_self">Nuestras cervezas</a></li>
+                <li class="nav-link"><a href="#nosotros" target="_self">Conocenos</a></li>
+                <li class="nav-link"><a href="#comprar" target="_self">Pedi tu Alta Pinta</a></li>
+                <li class="nav-link"><a href="#comunidadAP" target="_self">Comunidad</a></li>
+                <li class="nav-link"><a href="#contacto" target="_self">Contacto</a></li>
+            </ul>
+
+            <div class="burgerbtn"> 
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            </nav>
+        </header>
     <main>    
     <section class="inicio">
           <img class="imagen-inicio" alt="CervezasInicio" src="recursos/beer-inicio.jpg"  />
@@ -26,8 +35,8 @@
     <br>
         <section class="productos" id="productos">
             <h3 class="titulo-seccion">Nuestras cervezas</h3>
-            <h5> Agua, lupulo, malta y levadura, estos fueron los ingredientes elegidos para crear a la cerveza perfecta, pero el profesor agregó accidentalmente otro ingrediente a la fórmula: la sustancia C (o creatividad). Así nacieron las cervezas “Alta Pinta”.</h5>
-            <p> Conoce sobre nuestros tipos de cervezas y entra en el mundo del sabor de Alta Pinta</p>
+            <h5 id="subtitle"> Agua, lupulo, malta y levadura, estos fueron los ingredientes elegidos para crear a la cerveza perfecta, pero el profesor agregó accidentalmente otro ingrediente a la fórmula: la sustancia C (o creatividad). Así nacieron las cervezas “Alta Pinta”.</h5>
+            <p id="subtitle"> Conoce sobre nuestros tipos de cervezas y entra en el mundo del sabor de Alta Pinta</p>
             <div class="tipos-cervezas">
                 <div class="tipos-cerveza">
                     <img src="recursos/beer-3.png"  alt="cerveza" class="cerveza-dibujo" >
@@ -65,12 +74,12 @@
             <div class="nosotros-contenido">
                 <div>
                     <div class="mision">
-                        <h4>Mision</h4>
+                        <h4 id="subtitle">Mision</h4>
                         <p>Crear experiencias sensoriales excepcionales para nuestros clientes a través de la elaboración de cervezas de la más alta calidad. Nos esforzamos por fusionar la tradición cervecera con la innovación y la creatividad, ofreciendo una variedad de estilos que deleiten los paladares de los amantes de la cerveza. Además, buscamos promover la cultura cervecera y el aprecio por los ingredientes naturales y los procesos artesanales que hacen que cada sorbo de nuestra cerveza sea único y memorable.</p>
                        <br>
                        </div>
                        <div class="vision">
-                        <h4>Vision</h4>
+                        <h4 id="subtitle">Vision</h4>
                         <p>Nuestra visión es convertirnos en un referente reconocido a nivel nacional en el mundo de la cerveza artesanal, siendo admirados por nuestra calidad, creatividad y compromiso con la excelencia. Queremos ser reconocidos no solo por la excelencia de nuestras cervezas, sino también por nuestra contribución al desarrollo y promoción de la cultura cervecera, así como por nuestro compromiso con la sostenibilidad y la responsabilidad social en todas nuestras operaciones. Aspiramos a ser la elección preferida de los consumidores que buscan experiencias cervecera auténticas y memorables.</p>
                        <br>
                        </div>
@@ -129,9 +138,9 @@
             </div>
             <div>
                 <div class="text-comunidad">
-                    <h1 class="enterate">¡Enterate de todo antes que nadie!</h1>
-                    <h1 class="beneficios">Degustaciones, lanzamientos, y muchos beneficios más!</h1>
-                    <h3 class="ingresa-tu-mail">Ingresa tu mail y sumate a la comunidad </h3>
+                    <h1 class="enterate" id="subtitle">¡Enterate de todo antes que nadie!</h1>
+                    <h1 class="beneficios" id="subtitle">Degustaciones, lanzamientos, y muchos beneficios más!</h1>
+                    <h3 class="ingresa-tu-mail" id="subtitle">Ingresa tu mail y sumate a la comunidad </h3>
                 </div>
                  
                 <div class="suscribirse-comunidad">
@@ -154,7 +163,7 @@
         </section>
         <section class="tienda" id="tienda">
             <div class="tienda-aviso">
-                <h1 class="text-tienda">
+                <h1 class="text-tienda" id="subtitle">
                     PROXIMAMENTE LLEGA LA COMPRA DESDE LA WEB  
                 </h1>
                 <h3 class="text-tienda">

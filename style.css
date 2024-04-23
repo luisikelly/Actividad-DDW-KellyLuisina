@@ -3,24 +3,51 @@ a{
   text-decoration: none;
   color: #121216;
 }
-h1{
-  margin: 0;
-}
-h2{
-  margin: 0;
-}
-h3{
-  margin: 0;
-}
+
 body{
   font-family: "Lexend Deca", sans-serif;
   background-color: #FFFFFFFF;
   width: 100%;
 }
-@media (max-width: 600px){
-  body{
-    width: 150%;
-  }
+
+a{
+  text-decoration: none;
+  color: #121216;
+}
+
+footer{
+  display: flex;
+  justify-content:left;
+  background: #ACBD78;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.burgerbtn{
+  flex-direction: column;
+  cursor: pointer;
+  
+}
+
+.line{
+  width: 30px ;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 5px 0;
+
 }
 .header{
   display: flex;
@@ -32,21 +59,7 @@ body{
   font-size: 16px;
   background-color: #ACBD78
 }
-.navbar{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
-}
-.nav-link{
-  padding: 5%;
-}
+
 .logo-header {
   top: 7px;
   left: 154px;
@@ -55,6 +68,7 @@ body{
   object-fit: cover;
   z-index: 2;
 }
+
 
 .imagen-inicio {
   height: 450px;
@@ -156,7 +170,7 @@ margin-bottom: 10%;
   color:#FB8D0B;
 }
 
-.titulo-servicio{
+#titulo-servicio{
   color:#FB8D0B;
   font-size: 2rem;
   font-weight: bold;
@@ -237,10 +251,6 @@ margin-bottom: 10%;
   
 }
 
-.tienda-aviso{
-  align-content: center;
-}
-
 .text-tienda{
   display: flex;
   justify-content: center;
@@ -254,11 +264,6 @@ padding: 0;
 border: 0;
 }
 
-.footer{
-  display: flex;
-  justify-content:left;
-  background: #ACBD78;
-}
 .logo-footer{
   justify-self: left;
   width: 100px;
@@ -292,4 +297,57 @@ border: 0;
 
 .ingresa-tu-mail{
   color: #5D7123;
+}
+
+
+
+
+@media (max-width: 768px){
+ header, .inicio, .productos, .nosotros, .comprar, .comunidadAP, .puntosVenta, .contacto, .tienda{
+  width: 170%;
+ }
+
+ .titulo-seccion, .titulo-servicio{
+  font-size: 20px;
+ }
+
+ #subtitle{
+  font-size: 14px;
+ }
+  .navbar{
+  position: relative;
+ }
+.tipos-cervezas{
+  display: flex;
+  flex-direction: column;
+}
+
+.tipos-cerveza{
+  width: 200px;
+  height: 300px ;
+  font-size: px;
+}
+ .burgerbtn{
+  display: none;
+  align-content:center
+ }
+ .navlinks{
+  display: none;
+  flex-direction: column;
+  position:absolute;
+  top: 100%;
+  background-color: #ACBD78;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  text-align: center;
+
+  }
+
+  .btn-servicio{
+    width: 227px;
+    height: 21px ;
+    font-size: 12px;
+  }
+ 
 }
