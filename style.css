@@ -307,7 +307,9 @@ border: 0;
  header, footer, .inicio, .productos, .nosotros, .comprar, .comunidadAP, .puntosVenta, .contacto, .tienda{
   width: 100%;
  }
-
+.img-4{
+  display: none;
+}
  .titulo-seccion, .titulo-servicio{
   font-size: 20px;
  }
