@@ -1,27 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Hubballi&family=Lexend+Deca:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');          
-a{
-  text-decoration: none;
-  color: #121216;
-}
-h1{
-  margin: 0;
-}
-h2{
-  margin: 0;
-}
-h3{
-  margin: 0;
-}
+
 body{
   font-family: "Lexend Deca", sans-serif;
   background-color: #FFFFFFFF;
   width: 100%;
 }
-@media (max-width: 600px){
-  body{
-    width: 150%;
-  }
+
+a{
+  text-decoration: none;
+  color: #121216;
 }
+
+footer{
+  display: in;
+  justify-content:left;
+  background: #ACBD78;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
 .header{
   display: flex;
   align-self: stretch;
@@ -32,21 +42,7 @@ body{
   font-size: 16px;
   background-color: #ACBD78
 }
-.navbar{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
-}
-.nav-link{
-  padding: 5%;
-}
+
 .logo-header {
   top: 7px;
   left: 154px;
@@ -55,6 +51,20 @@ body{
   object-fit: cover;
   z-index: 2;
 }
+
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
 
 .imagen-inicio {
   height: 450px;
@@ -237,10 +247,6 @@ margin-bottom: 10%;
   
 }
 
-.tienda-aviso{
-  align-content: center;
-}
-
 .text-tienda{
   display: flex;
   justify-content: center;
@@ -254,11 +260,6 @@ padding: 0;
 border: 0;
 }
 
-.footer{
-  display: flex;
-  justify-content:left;
-  background: #ACBD78;
-}
 .logo-footer{
   justify-self: left;
   width: 100px;
@@ -292,4 +293,42 @@ border: 0;
 
 .ingresa-tu-mail{
   color: #5D7123;
+}
+
+
+@media (max-width: 952px){
+  .logo-header{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 700px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ACBD78;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  
+  #check:checked ~ ul{
+      left:0;
+  }
 }
