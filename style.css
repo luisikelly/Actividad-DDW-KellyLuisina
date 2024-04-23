@@ -303,8 +303,8 @@ border: 0;
 
 
 @media (max-width: 768px){
- header, .inicio, .productos, .nosotros, .comprar, .comunidadAP, .puntosVenta, .contacto, .tienda{
-  width: 170%;
+ header, footer, .inicio, .productos, .nosotros, .comprar, .comunidadAP, .puntosVenta, .contacto, .tienda{
+  width: 200%;
  }
 
  .titulo-seccion, .titulo-servicio{
