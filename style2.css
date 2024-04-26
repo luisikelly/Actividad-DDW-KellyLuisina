@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Hubballi&family=Lexend+Deca:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');          
+
+body{
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+     color: #FFFFFF;
+}
+ul{
+    list-style: none;
+}
+footer{
+  display: flex;
+  justify-content:left;
+  background: #ACBD78;
+}
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  
+  section a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    background-color: #f39a47;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  section:target p {
+    max-height: 200px;
+    padding: 10px;
+  }
+
+  /* General */
+.titulo-seccion{
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center; 
+}
+.subtitulo-seccion{
+  font-weight:normal;
+  font-size: 18px;
+  margin: 0;
+  
+}
+
+.division{
+    width: 100%;
+    height: 2px;
+    background-color: #faad47;
+ 
+}
+
+/* Header - navbar*/
+.navbar{
+    background-color: #ACBD78;
+    width: 100%;
+    height: 2%;
+    display: flex;
+}
+.logo-header{
+    width: 7rem;
+    height: 7rem;
+    margin-left: 20rem;
+}
+
+.nav-link{
+    display: inline-block;
+    line-height: 5rem;
+    font-size: 10pt;
+    margin: 0 0.5rem;
+}
+
+.bars{
+  font-size: 2rem;
+  color: #F0E4B5;
+  float: left;
+  cursor: pointer;
+  display: none;
+  margin-left: 1rem;
+  padding: -2rem;
+  border-radius: -1rem;
+}
+.checkbox{
+  display: none;
+}
+/* SECTION: Inicio*/
+.inicio{
+}
+.imagen-inicio{
+    height: 450px;
+    width: 100%;
+    margin: 0 !important;
+    right: 0;
+    bottom: -0.5px;
+    object-fit: cover;
+}
+
+
+/* SECTION: Nosotros*/
+.productos{;
+    background-color: #F0E4B5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tipos-cervezas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .tipos-cerveza{
+    text-transform: uppercase;
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #ACBD78;
+    border-radius: 10px;
+    font-size: 10pt;
+  }
+  
+  .cerveza-dibujo{
+    width: 120px;
+   height: 120px;
+  } 
+
+/* SECTION: Nosotros*/
+.nosotros{
+    background-color: #ACBD78;
+    height: 650px;
+    padding: 10px;
+}
+
+.accordion {
+  width: 90%;
+}
+
+.accordion-item {
+  border: 1px solid #F0E4B5;
+  margin-bottom: 30px;
+}
+
+.accordion-title {
+  background-color: #faad47;
+  padding: 10px;
+  width: 700px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+
+  
+
+
+/* SECTION: Servicios*/
+.comprar{
+    height: 1050px;
+    padding: 10px;
+    background-color:#F0E4B5;
+}
+.servicios{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 100px;
+}
+.servicio-icono{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.cerveza-icono{
+    width: 150px;
+    height: 150px;
+}
+.APservicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondo-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  background-color: #ACBD78;
+  border-radius: 50%;
+}
+.btn-servicio{
+    font-weight: bold;
+    margin-bottom: 2%;
+    width: 250px;
+    border-radius: 20px;   
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+   }
+
+   .servicio-titulo{
+    font-size: 16px;
+    font-weight: bold;
+   }
+   
+/* SECTION: Comunidad*/
+
+.images{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;  
+}
+.img-1{
+  width: 200px;
+  height: 200px;
+  margin-left: 0.5%;
+  margin-right: 0.5% ;
+
+}
+.img-2{
+  width: 300px;
+  height: 400px;
+  margin-left: 0.5%;
+  margin-right: 0.5% ;
+}
+
+.img-3{
+  width: 300px;
+  height: 250px;
+  align-self: flex-end;
+  margin-left: 0.5%;
+  margin-right: 0.5% ;
+}
+
+.img-4{
+  width: 300px;
+  height: 400px;
+  margin-left: 0.5%;
+  margin-right: 0.5% ;
+}
+
+.text-comunidad{
+  font-weight: 700;
+}
+.enterate{
+  color: #FB8D0B;
+}
+
+.ingresa-tu-mail{
+  color: #5D7123;
+}
+
+.comunidadAP{
+  align-items: center;
+  margin-bottom: 10%;
+}
+/* SECTION: Punto de venta*/
+.puntosVenta{
+  background-color: #ACBD78;
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* SECTION: Contacto*/
+.btn{
+  color: #FFFFFF;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: semi-bold;
+  text-align: center;
+  background-color: #ACBD78;
+  border-color: #ACBD78;
+  
+}
+
+.input{
+  width: 200px;
+  height: 20px;
+  background-color: #acbd7888;
+  border-radius: 40px;
+  border-color: #acbd78ab;
+  margin-bottom: 5px;
+}
+/* Footer*/
+.logo-footer{
+  justify-self: left;
+  width: 100px;
+  height: 100px;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+  .bars{
+    display: block;
+    margin-top: 40px;
+  }
+  .navlinks{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #faad47;
+    top: 80px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+}
+.nav-link{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+    .info-container {
+        width: 1200px;
+      }
+      
+    .tipos-cervezas{
+        flex-direction: column;
+    }
+    .nosotros-img{
+        display: none;
+    }
+    .info-container {
+        width: 250px;
+        margin: auto;	
+    }
+    .nosotros{
+      height: 1400px;
+    }
+    .comprar{
+      height: 3000px;
+    }
+    .servicios{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    
+}
