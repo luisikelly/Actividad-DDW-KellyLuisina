@@ -1,229 +1,242 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Hubballi&family=Lexend+Deca:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');          
-a{
-  text-decoration: none;
-  color: #121216;
-}
 
 body{
-  font-family: "Lexend Deca", sans-serif;
-  background-color: #FFFFFFFF;
-  width: 100%;
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
 }
-
 a{
-  text-decoration: none;
-  color: #121216;
+    text-decoration: none;
+     color: #FFFFFF;
 }
-
+ul{
+    list-style: none;
+}
 footer{
   display: flex;
   justify-content:left;
   background: #ACBD78;
 }
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-nav ul{
-  float: right;
-  margin-right: 20px;
+section p {
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  
+  section a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    background-color: #f39a47;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  section:target p {
+    max-height: 200px;
+    padding: 10px;
+  }
+
+  /* General */
+.titulo-seccion{
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center; 
 }
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a{
+.subtitulo-seccion{
+  font-weight:normal;
   font-size: 18px;
-  padding: 7px 13px;
-  border-radius: 3px;
-}
-
-.burgerbtn{
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+  margin: 0;
   
 }
 
-.line{
-  width: 30px ;
-  height: 3px;
-  background-color: #FFFFFF;
-  margin: 5px 0;
-
-}
-.header{
-  display: flex;
-  align-self: stretch;
-  height: 140px;
-  position: relative;
-  text-align: left;
-  font-family: "Lexend Deca", sans-serif;                           
-  font-size: 16px;
-  background-color: #ACBD78
+.division{
+    width: 100%;
+    height: 2px;
+    background-color: #faad47;
+ 
 }
 
-.logo-header {
-  top: 7px;
-  left: 154px;
-  width: 250px;
-  height: 120px;
-  object-fit: cover;
-  z-index: 2;
+/* Header - navbar*/
+.navbar{
+    background-color: #ACBD78;
+    width: 100%;
+    height: 2%;
+    display: flex;
+}
+.logo-header{
+    width: 7rem;
+    height: 7rem;
+    margin-left: 20rem;
+}
+
+.nav-link{
+    display: inline-block;
+    line-height: 5rem;
+    font-size: 10pt;
+    margin: 0 0.5rem;
+}
+
+.bars{
+  font-size: 2rem;
+  color: #F0E4B5;
+  float: left;
+  cursor: pointer;
+  display: none;
+  margin-left: 1rem;
+  padding: -2rem;
+  border-radius: -1rem;
+}
+.checkbox{
+  display: none;
+}
+/* SECTION: Inicio*/
+.inicio{
+}
+.imagen-inicio{
+    height: 450px;
+    width: 100%;
+    margin: 0 !important;
+    right: 0;
+    bottom: -0.5px;
+    object-fit: cover;
 }
 
 
-.imagen-inicio {
-  height: 450px;
-  width: 100%;
-  margin: 0 !important;
-  right: 0;
-  bottom: -0.5px;
-  object-fit: cover;
-}
-
-.titulo-seccion{
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-  color: #121216;
+/* SECTION: Nosotros*/
+.productos{;
+    background-color: #F0E4B5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .tipos-cervezas{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
-.tipos-cerveza{
- width: 273px;
- height: 386px;
-  margin: 5px;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ACBD78;
-  justify-content: center;
-}
-
-.cerveza-dibujo{
-  width: 200px;
- height: 200px;
-} 
-
-.nosotros{
-  background-color: #ACBD78;
-  width: 100%;
+  
+  .tipos-cerveza{
+    text-transform: uppercase;
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #ACBD78;
+    border-radius: 10px;
+    font-size: 10pt;
   }
+  
+  .cerveza-dibujo{
+    width: 120px;
+   height: 120px;
+  } 
 
-.nosotros-contenido{
+/* SECTION: Nosotros*/
+.nosotros{
+    background-color: #ACBD78;
+    height: 650px;
+    padding: 10px;
+}
+
+.accordion {
+  width: 90%;
+}
+
+.accordion-item {
+  border: 1px solid #F0E4B5;
+  margin-bottom: 30px;
+}
+
+.accordion-title {
+  background-color: #faad47;
+  padding: 10px;
+  width: 700px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+
+  
+
+
+/* SECTION: Servicios*/
+.comprar{
+    height: 1050px;
+    padding: 10px;
+    background-color:#F0E4B5;
+}
+.servicios{
   display: grid;
   grid-template-columns: auto auto;
+  margin: 100px;
 }
-
-.nosotros-img{
-  width: 300px;
-  height: 500px;
-  border-radius: 2%;
-  grid-column: 2;
-  margin-right: 100px;
+.servicio-icono{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
-
-.nosotros-text-container{
-  margin: 20px;
-  grid-column: 1;
-  width: 70%;
-
-}
-
-.mision{
-  background-color: #FB8D0B;
-  margin-bottom: 2%;
-  border-radius: 2%;
-  
-}
-
-.vision{
-  background-color: #fb8f0b8c;
-  border-radius: 2%;
-}
-
-
-.comprar{
-  margin: 0;
-  background-color: #222222;
-}
 .cerveza-icono{
-width: 200px;
-height: 200px;
+    width: 150px;
+    height: 150px;
 }
-
-.puntosVenta{
-  background-color: #ACBD78;
-  margin: 0;
-}
-
-.comunidadAP{
-align-items: center;
-margin-bottom: 10%;
-}
-
-.servicio{
-  display:flex;
+.APservicio{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  color:#FB8D0B;
 }
 
-.titulo-servicio{
-  color:#FB8D0B;
-  font-size: 2rem;
-  font-weight: bold;
-  
-}
-
-.nuestros-servicios{
-  color:#fbcf0b;
+.fondo-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  background-color: #ACBD78;
+  border-radius: 50%;
 }
 .btn-servicio{
- font-weight: bold;
- background-color: #ACBD78;
- margin-bottom: 2%;
- width: 250px;
- border-radius: 40px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    width: 250px;
+    border-radius: 20px;   
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+   }
 
- border: none;
- color: white;
- padding: 20px 34px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 20px;
- margin: 4px 2px;
- cursor: pointer;
-}
-
-.content-btn{
-  color:#FFFFFF;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.APservicio{
-  color:#FB8D0B;
-  margin-bottom: 2%;
-}
+   .servicio-titulo{
+    font-size: 16px;
+    font-weight: bold;
+   }
+   
+/* SECTION: Comunidad*/
 
 .images{
   display: flex;
   justify-content: center;
-  
+  margin-top: 20px;  
 }
 .img-1{
   width: 200px;
@@ -254,53 +267,6 @@ margin-bottom: 10%;
   margin-right: 0.5% ;
 }
 
-.tienda{
-  background-color: #121216;
-  width: 100%;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.text-tienda{
-  display: flex;
-  justify-content: center;
-  color: #FB8D0B;
-  
-}
-
-.contacto{
-margin: 0;
-padding: 0;
-border: 0;
-}
-
-.logo-footer{
-  justify-self: left;
-  width: 100px;
-  height: 100px;
-}
-
-.btn{
-  color: #FFFFFF;
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 15px;
-  font-weight: semi-bold;
-  text-align: center;
-  background-color: #ACBD78;
-  border-color: #ACBD78;
-}
-
-.input{
-  width: 200px;
-  height: 30px;
-  background-color: #acbd7888;
-  border-radius: 40px;
-  border-color: #acbd78ab;
-}
-
 .text-comunidad{
   font-weight: 700;
 }
@@ -312,66 +278,102 @@ border: 0;
   color: #5D7123;
 }
 
-
-
-
-@media (max-width: 768px){
- header, footer, .inicio, .productos, .nosotros, .comprar, .comunidadAP, .puntosVenta, .contacto, .tienda{
-  width: 100%;
- }
-.img-4{
-  display: none;
+.comunidadAP{
+  align-items: center;
+  margin-bottom: 10%;
 }
- .titulo-seccion, .titulo-servicio{
-  font-size: 20px;
- }
-
- #subtitle{
-  font-size: 14px;
- }
-  .navbar{
-  position: relative;
- }
-.tipos-cervezas{
-  display: flex;
-  flex-direction: column;
+/* SECTION: Punto de venta*/
+.puntosVenta{
+  background-color: #ACBD78;
+  margin: 0;
+  margin-top: 10px;
 }
 
-.tipos-cerveza{
+/* SECTION: Contacto*/
+.btn{
+  color: #FFFFFF;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: semi-bold;
+  text-align: center;
+  background-color: #ACBD78;
+  border-color: #ACBD78;
+  
+}
+
+.input{
   width: 200px;
-  height: 300px ;
-  font-size: px;
+  height: 20px;
+  background-color: #acbd7888;
+  border-radius: 40px;
+  border-color: #acbd78ab;
+  margin-bottom: 5px;
 }
- .burgerbtn{
-  display: none;
-  align-content:center
- }
- .navlinks{
-  display: none;
+/* Footer*/
+.logo-footer{
+  justify-self: left;
+  width: 100px;
+  height: 100px;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+  .logo-header{
+    margin-left: 10rem;
+  }
+  .bars{
+    display: block;
+    margin-top: 40px;
   }
 
-  .btn-servicio{
-    width: 227px;
-    height: 21px ;
-    font-size: 12px;
-  }
-  .nosotros-contenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .nosotros-img{
-    width: 100px;
-    height: 300px;
-    border-radius: 2%;
-   }
-  
-  .nosotros-text-container{
-    margin: 5px;
-    width: 100%;
-  
-  }
-  
+  .navlinks{
+    position: fixed;
+    width: 150%;
+    height: 100vh;
+    background: #faad47;
+    top: 80px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+}
+.nav-link{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+.nav-link a:hover, .nav-link a.active{
+  background: none;
+  color: #5D7123;
+}
+#check:checked ~ .navlinks{
+  left:0;
+}
+    .info-container {
+        width: 1200px;
+      }
+      
+    .tipos-cervezas{
+        flex-direction: column;
+    }
+    .nosotros-img{
+        display: none;
+    }
+    .info-container {
+        width: 250px;
+        margin: auto;	
+    }
+    .nosotros{
+      height: 1400px;
+    }
+    .comprar{
+      height: 3000px;
+    }
+    .servicios{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }   
 }
