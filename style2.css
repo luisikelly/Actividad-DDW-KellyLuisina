@@ -85,19 +85,23 @@ section p {
     margin: 0 0.5rem;
 }
 
+li a.active, li a:hover{
+  transition: .5s;
+}
 .bars{
   font-size: 2rem;
   color: #F0E4B5;
-  float: left;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
   display: none;
-  margin-left: 1rem;
-  padding: -2rem;
-  border-radius: -1rem;
 }
-.checkbox{
+#checkbox{
   display: none;
 }
+
+
 /* SECTION: Inicio*/
 .inicio{
 }
@@ -333,7 +337,7 @@ section p {
     height: 100vh;
     background: #faad47;
     top: 80px;
-    left: -150%;
+    left: -200%;
     text-align: center;
     transition: all .5s;
 }
