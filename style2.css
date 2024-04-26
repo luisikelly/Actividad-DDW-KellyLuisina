@@ -330,7 +330,7 @@ section p {
     height: 100vh;
     background: #faad47;
     top: 80px;
-    left: -150%;
+    left: -100%;
     text-align: center;
     transition: all .5s;
 }
