@@ -323,6 +323,7 @@ section p {
     display: block;
     margin-top: 40px;
   }
+
   .navlinks{
     position: fixed;
     width: 100%;
@@ -364,6 +365,5 @@ section p {
       flex-direction: column;
       align-items: center;
       margin: 20px;
-    }
-    
+    }   
 }
