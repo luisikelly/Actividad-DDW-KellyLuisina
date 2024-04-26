@@ -329,7 +329,7 @@ section p {
     height: 100vh;
     background: #faad47;
     top: 80px;
-    left: -100%;
+    left: -150%;
     text-align: center;
     transition: all .5s;
 }
@@ -339,12 +339,6 @@ section p {
     line-height: 30px;
 }
 
-  .navlinks{
-
-  }
-  .nav-link{
-
-  }
     .info-container {
         width: 1200px;
       }
