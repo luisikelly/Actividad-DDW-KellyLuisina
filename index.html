@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta Pinta - Cerveza Artesanal</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <link rel="icon" href="recursos/icono.ico">
 
 </head>
 
 <body>
     <header class="header">
-        <img class="logo-header" alt="logoAltaPinta" src="recursos/logo.png" />
         <nav class="navbar">
-         <ul class="navlinks">
+            <img class="logo-header" alt="logoAltaPinta" src="recursos/logo.png" />
+            <ul class="navlinks">
                 <li class="nav-link"><a href="#productos" target="_self">Nuestras cervezas</a></li>
                 <li class="nav-link"><a href="#nosotros" target="_self">Conocenos</a></li>
                 <li class="nav-link"><a href="#comprar" target="_self">Pedi tu Alta Pinta</a></li>
@@ -28,15 +28,16 @@
             </div>
             </nav>
         </header>
-    <main>    
+    <main> 
+    <div class="division"></div>   
     <section class="inicio">
           <img class="imagen-inicio" alt="CervezasInicio" src="recursos/beer-inicio.jpg"  />
     </section>
-    <br>
-        <section class="productos" id="productos">
+    <div class="division"></div>    
+    <section class="productos" id="productos">
             <h3 class="titulo-seccion">Nuestras cervezas</h3>
             <h5 id="subtitle"> Agua, lupulo, malta y levadura, estos fueron los ingredientes elegidos para crear a la cerveza perfecta, pero el profesor agregó accidentalmente otro ingrediente a la fórmula: la sustancia C (o creatividad). Así nacieron las cervezas “Alta Pinta”.</h5>
-            <p id="subtitle"> Conoce sobre nuestros tipos de cervezas y entra en el mundo del sabor de Alta Pinta</p>
+            <p class="subtitlo-seccion" id="subtitle"> Conoce sobre nuestros tipos de cervezas y entra en el mundo del sabor de Alta Pinta</p>
             <div class="tipos-cervezas">
                 <div class="tipos-cerveza">
                     <img src="recursos/beer-3.png"  alt="cerveza" class="cerveza-dibujo" >
@@ -66,68 +67,90 @@
             </div>
             <br>    
         </section>      
-    
+        <div class="division"></div>
         <section class="nosotros" id="nosotros">
-            <h2 class="titulo-seccion">Conocenos</h2> <br>
-            <h3>El arte de la cerveza artesanal, en cada sorbo, una obra maestra</h3><br>
-            
-            <div class="nosotros-contenido">
-                <div class="nosotros-text-container">
-                    <div class="mision">
-                        <h4 id="subtitle">Mision</h4>
-                        <p>Crear experiencias sensoriales excepcionales para nuestros clientes a través de la elaboración de cervezas de la más alta calidad. Nos esforzamos por fusionar la tradición cervecera con la innovación y la creatividad, ofreciendo una variedad de estilos que deleiten los paladares de los amantes de la cerveza. Además, buscamos promover la cultura cervecera y el aprecio por los ingredientes naturales y los procesos artesanales que hacen que cada sorbo de nuestra cerveza sea único y memorable.</p>
-                       <br>
-                       </div>
-                       <div class="vision">
-                        <h4 id="subtitle">Vision</h4>
-                        <p>Nuestra visión es convertirnos en un referente reconocido a nivel nacional en el mundo de la cerveza artesanal, siendo admirados por nuestra calidad, creatividad y compromiso con la excelencia. Queremos ser reconocidos no solo por la excelencia de nuestras cervezas, sino también por nuestra contribución al desarrollo y promoción de la cultura cervecera, así como por nuestro compromiso con la sostenibilidad y la responsabilidad social en todas nuestras operaciones. Aspiramos a ser la elección preferida de los consumidores que buscan experiencias cervecera auténticas y memorables.</p>
-                       <br>
-                       </div>
-                </div>
-                <img src="recursos/beer-nosotros.jpg" alt="AltaPinta" class="nosotros-img">
-            </div>
-            
-            
-            
-        </section>
-
-        <section class="comprar" id="comprar">
-            
-                
-                <div class="servicios">
-                  <div class="titulo-servicio">
-                    <h1 class="pediAP">Pedí tu Alta Pinta</h1>
+            <h3 class="titulo-seccion">Conocenos</h3> <br>
+            <p class="subtitlo-seccion">El arte de la cerveza artesanal, en cada sorbo, una obra maestra</p><br>
+            <div class="accordion">
+                <div class="accordion-item">
+                  <input type="radio" name="accordion" id="accordion-1" hidden>
+                  <label for="accordion-1" class="accordion-title">Misión</label>
+                  <div class="accordion-content">
+                    <p>Crear experiencias sensoriales excepcionales para nuestros clientes a través de la elaboración de cervezas de la más alta calidad. Nos esforzamos por fusionar la tradición cervecera con la innovación y la creatividad, ofreciendo una variedad de estilos que deleiten los paladares de los amantes de la cerveza. Además, buscamos promover la cultura cervecera y el aprecio por los ingredientes naturales y los procesos artesanales que hacen que cada sorbo de nuestra cerveza sea único y memorable.</p>
                   </div>
-                  <h3 class="nuestros-servicios">Nuestros servicios</h3>
                 </div>
-                
-                <div class="servicio">
-                    <img class="cerveza-icono" alt="icono" src="recursos/beer-3.png"/>
-                    <h1 class="alta-pinta-a">Alta Pinta a tu casa</h1>
-                    
+                <div class="accordion-item">
+                  <input type="radio" name="accordion" id="accordion-2" hidden>
+                  <label for="accordion-2" class="accordion-title">Visión</label>
+                  <div class="accordion-content">
+                    <p>Nuestra visión es convertirnos en un referente reconocido a nivel nacional en el mundo de la cerveza artesanal, siendo admirados por nuestra calidad, creatividad y compromiso con la excelencia. Queremos ser reconocidos no solo por la excelencia de nuestras cervezas, sino también por nuestra contribución al desarrollo y promoción de la cultura cervecera, así como por nuestro compromiso con la sostenibilidad y la responsabilidad social en todas nuestras operaciones. Aspiramos a ser la elección preferida de los consumidores que buscan experiencias cervecera auténticas y memorables.</p>
+                  </div>
                 </div>
-                <div class="APservicio">
-                    <h3 class="consegui-tu-alta">Consegui tu Alta Pinta</h3>
-                    <div class="btn-servicio"> <a href="#tienda" class="content-btn">Compra online</a></div>
-                    <div class="btn-servicio"><a href="#puntosVenta" class="content-btn">Consulta donde comprar</a></div>
+              </div>            
+        </section>
+        <div class="division"></div>
+        <section class="comprar" id="comprar">
+                <h3 class="titulo-seccion">Pedí tu Alta Pinta</h3>
+                <h3 class="subtitlo-seccion">Nuestros servicios</h3>
+                <p class="descripcion-servicio"> 
+                    Estas a un paso de tu próxima Alta Pinta, entra a nuestro mundo donde la calidad y la pasión se fusionan en cada gota. Ofrecemos una amplia gama de cervezas cuidadosamente elaboradas, desde clásicos atemporales hasta innovadoras creaciones que desafían los límites del sabor.
+                    <br><br>   
+                    <strong>Alta Pinta a tu casa</strong>
+                    <br>
+                    Nuestras cervezas artesanales embotelladas son el epítome de la excelencia. Cada botella encierra el cuidado artesanal y la dedicación de nuestros maestros cerveceros, garantizando una experiencia sensorial única en cada sorbo. Desde intensas IPAs hasta suaves cervezas de trigo, tenemos algo para todos los paladares y ocasiones.
+                    <br><br>
+                    <strong>Alta Pinta a tu evento</strong>
+                    <br>                    ¿Estás planeando un evento memorable? Sorprende a tus invitados con nuestra cerveza artesanal servida directamente desde barriles. Nuestro equipo se encarga de todo, desde la entrega hasta la instalación, para que puedas relajarte y disfrutar de la ocasión. Ya sea una boda, un cumple o una reunión con amigas, nuestras cervezas añaden un toque que mejora cualquier evento.
+                    <br><br>
+                    <strong>Por qué elegirnos:</strong>
+                    <br>
+                    - Calidad inigualable: Nos comprometemos a ofrecer solo lo mejor, utilizando ingredientes de primera calidad y técnicas de elaboración artesanales.
+                    <br>
+                    - Variedad: Con una amplia selección de estilos y sabores, tenemos la cerveza perfecta para cada gusto y ocasión.
+                    <br>
+                    - Servicio excepcional: Desde el primer contacto hasta el último sorbo, nuestro equipo está dedicado a brindarte una experiencia impecable.
+                    <br>
+                    - Experiencia sin complicaciones: Ya sea que estés comprando botellas para llevar o planificando un evento, nos encargamos de todos los detalles para que puedas disfrutar sin preocupaciones.
+                    <br>
+                    Déjanos ser parte de tus momentos especiales y descubre el encanto de la cerveza artesanal en su máxima expresión. ¡Salud! 🍻</p>
+                </p>
+                    <div class="servicios">
+                    <div class="servicio">
+                        <div class="servicio-icono">
+                            <p class="servicio-titulo">Alta Pinta a tu casa</p>
+                            <div class="fondo-img">
+                                <img class="cerveza-icono" alt="icono" src="recursos/beer-2.png"/>
+                            </div>
+                            
+                        </div>
+                        <div class="APservicio">
+                            <p class="consegui-tu-alta">Consegui tu Alta Pinta</p>
+                            <div class="btn-servicio"> <a href="#tienda" class="content-btn">Compra online</a></div>
+                            <div class="btn-servicio"><a href="#puntosVenta" class="content-btn">Consulta donde comprar</a></div>
+                        </div>  
     
-                </div>             
-                <br><br>
-                <div class="servicio">
-                    <img class="cerveza-icono" alt="icono" src="recursos/beer-3.png"/>
-                    <h1 class="alta-pinta-a1">Alta Pinta a tu evento</h1>
+                    </div>
+                    <div class="servicio">
+                        <div class="servicio-icono">
+                            <p class="servicio-titulo">Alta Pinta a tu evento</p>  
+                            <div class="fondo-img">
+                                <img class="cerveza-icono" alt="icono" src="recursos/beer-3.png"/>
+                            </div>
+                        </div>
+                        <div class="APservicio">
+                            <p class="ponele-sabor-a">Ponele sabor a tu evento</p>
+                            <div class="btn-servicio"> <a href="#contacto" class="content-btn">Contactanos para más info</a></div>
+                        </div>
+    
+                    </div>
+
+                </div>
                 
-                        
-                </div>
-                <div class="APservicio">
-                    <h3 class="ponele-sabor-a">Ponele sabor a tu evento</h3>
-                    <div class="btn-servicio"> <a href="#contacto" class="content-btn">Contactanos para más info</a></div>
-                </div>
+        
                 <br><br>
-               </div>         
 
         </section>
-
+        <div class="division"></div>
         <section class="comunidadAP" id="comunidadAP">
             <h2 class="titulo-seccion">Comunidad Alta Pinta</h2>
             <div class="images">
@@ -151,7 +174,7 @@
                 </div> 
             </div>
           </section>
-    
+          <div class="division"></div>
         <section class="puntosVenta" id="puntosVenta">
             <h2 class="titulo-seccion">Puntos de Venta</h2>
             <ul>
@@ -162,16 +185,10 @@
             <br>    
         </section>
         <section class="tienda" id="tienda">
-            <div class="tienda-aviso">
-                <h1 class="text-tienda" id="subtitle">
-                    PROXIMAMENTE LLEGA LA COMPRA DESDE LA WEB  
-                </h1>
-                <h3 class="text-tienda">
-                      Mientras tanto podes pedirlas desde el formulario de contacto
-                </h3>
-            </div>
+            <!-- Espacio para futura tienda online-->
             
         </section>
+        <div class="division"></div>
         <section class="contacto" id="contacto">
             <h2 class="titulo-seccion">Contactanos</h2>
 
@@ -184,6 +201,7 @@
             <br><br>
         </section>
     </main>
+    
     <footer class="footer">
         <span>
          <img src="recursos/logo.png" alt="logo-footer" class="logo-footer">
