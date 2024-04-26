@@ -319,6 +319,9 @@ section p {
 /*Responsive*/
 
 @media (max-width: 768px) {
+  .logo-header{
+    margin-left: 10rem;
+  }
   .bars{
     display: block;
     margin-top: 40px;
@@ -326,11 +329,11 @@ section p {
 
   .navlinks{
     position: fixed;
-    width: 100%;
+    width: 150%;
     height: 100vh;
     background: #faad47;
     top: 80px;
-    left: -100%;
+    left: -150%;
     text-align: center;
     transition: all .5s;
 }
@@ -340,6 +343,13 @@ section p {
     line-height: 30px;
 }
 
+.nav-link a:hover, .nav-link a.active{
+  background: none;
+  color: #5D7123;
+}
+#check:checked ~ .navlinks{
+  left:0;
+}
     .info-container {
         width: 1200px;
       }
