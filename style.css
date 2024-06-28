@@ -105,6 +105,10 @@ section p {
     height: 7rem;
     margin-left: 20rem;
 }
+.hamburger {
+  display: none;
+}
+
 
 .nav-link{
     display: inline-block;
@@ -113,38 +117,21 @@ section p {
     margin: 0 0.5rem;
 }
 
-li a.active, li a:hover{
-  transition: .5s;
-}
-.bars{
-  font-size: 2rem;
-  color: #F0E4B5;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#checkbox{
-  display: none;
-}
 
 
 /* SECTION: Inicio*/
-.inicio{
-}
-.imagen-inicio{
-    height: 450px;
-    width: 100%;
-    margin: 0 !important;
-    right: 0;
-    bottom: -0.5px;
-    object-fit: cover;
-}
 
+.imagen-inicio{
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+  right: 0;
+  bottom: -0.5px;
+  object-fit: cover;
+}
 
 /* SECTION: Nosotros*/
-.productos{;
+.productos{
     background-color: #F0E4B5;
     text-align: center;
     padding: 20px;
@@ -179,7 +166,7 @@ li a.active, li a:hover{
 /* SECTION: Nosotros*/
 .nosotros{
     background-color: #ACBD78;
-    height: 650px;
+    height: 550px;
     padding: 10px;
 }
 
@@ -481,8 +468,7 @@ li a.active, li a:hover{
   display: none;
 }
 /* SECTION: Inicio*/
-.inicio{
-}
+
 .imagen-inicio{
     height: 450px;
     width: 100%;
@@ -494,7 +480,7 @@ li a.active, li a:hover{
 
 
 /* SECTION: Nosotros*/
-.productos{;
+.productos{
     background-color: #F0E4B5;
     text-align: center;
     padding: 20px;
@@ -600,7 +586,7 @@ li a.active, li a:hover{
     border-radius: 20px;   
     border: none;
     color: white;
-    padding: 20px 34px;
+    padding: 0px 34px;
     text-align: center;
     text-decoration: none;
     font-size: 10px;
@@ -692,70 +678,128 @@ li a.active, li a:hover{
   margin-bottom: 5px;
 }
 /* Footer*/
-.logo-footer{
-  justify-self: left;
-  width: 100px;
-  height: 100px;
+.content-footer{
+  display: flex;
+  align-items: center;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-button img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-button:hover img {
+  transform: scale(1.1);
 }
 
 /*Responsive*/
 
 @media (max-width: 768px) {
   .logo-header{
-    margin-left: 10rem;
+    margin-left: 18rem;
   }
-  .bars{
+  .hamburger {
     display: block;
-    margin-top: 40px;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    padding: 20px 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.25s
+      cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index: 1002;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 25px;
+    margin-left: 150px;
+  }
+  .hamburger.is-active {
+    background-color: none;
+  }
+  ._layer {
+    margin-bottom: 4px;
+    border-radius: 2px;
+    width: 28px;
+    height: 4px;
+    opacity: 1;
+  }
+  .-top, .-mid, .-bottom{
+    background-color: #F0E4B5;
   }
 
-  .navlinks{
+  .menuppal.is_active {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  .menuppal {
+    display: flex;
+    background-color: #fcfcd7;
+    bottom: 0;
+    height: 100%;
+    left: 0;
     position: fixed;
-    width: 150%;
-    height: 100vh;
-    background: #faad47;
-    top: 80px;
-    left: -200%;
-    text-align: center;
-    transition: all .5s;
-}
-.nav-link{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+  }
+  .navlinks{
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    margin: 35%;
+    padding: 0;
+  }
 
-.nav-link a:hover, .nav-link a.active{
-  background: none;
-  color: #5D7123;
-}
-#check:checked ~ .navlinks{
-  left:0;
-}
-    .info-container {
-        width: 1200px;
-      }
-      
-    .tipos-cervezas{
-        flex-direction: column;
-    }
-    .nosotros-img{
-        display: none;
-    }
-    .info-container {
-        width: 250px;
-        margin: auto;	
-    }
-    .nosotros{
-      height: 1400px;
-    }
-    .comprar{
-      height: 2000px;
-    }
-    .servicios{
-      display: flex;
+  .menuppal ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3em;
+    height: 3em;
+    color: #ffffff;
+    text-transform: none;
+    font-weight: bold;
+  }
+  
+  .tipos-cervezas{
       flex-direction: column;
-      align-items: center;
-      margin: 20px;
-    }   
+  }
+  .nosotros-img{
+      display: none;
+  }
+  .info-container {
+      width: 250px;
+      margin: auto;	
+  }
+  .nosotros{
+    height: 700px;
+  }
+  .comprar{
+    height: 1650px;
+  }
+  .servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }   
 }
