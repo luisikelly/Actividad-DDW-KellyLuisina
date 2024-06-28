@@ -202,7 +202,7 @@ section p {
 .servicios{
   display: grid;
   grid-template-columns: auto auto;
-  margin: 100px;
+  margin: 30px;
 }
 .servicio-icono{
   display: flex;
@@ -707,7 +707,7 @@ section p {
 
 @media (max-width: 768px) {
   .logo-header{
-    margin-left: 18rem;
+    margin-left: 10rem;
   }
   .hamburger {
     display: block;
@@ -791,10 +791,10 @@ section p {
       margin: auto;	
   }
   .nosotros{
-    height: 700px;
+    height: 1000px;
   }
   .comprar{
-    height: 1650px;
+    height: 2000px;
   }
   .servicios{
     display: flex;
