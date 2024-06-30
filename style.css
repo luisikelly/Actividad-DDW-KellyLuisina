@@ -580,7 +580,9 @@ display: none;
   align-items: center;
   gap: 20px;
 }
-
+.contact-info p{
+  display: none;
+}
 .social-buttons {
   display: flex;
   gap: 10px;
@@ -684,6 +686,12 @@ display: none;
     max-width: 100%;
     height: auto ;
   }  
+  .titulo-seccion{
+    font-size: 18px;
+  }
+  .subtitulo-seccion{
+    font-size: 16px;
+  }
   .tipos-cervezas{
       flex-direction: column;
   }
@@ -705,6 +713,9 @@ display: none;
 .accordion {
     margin-right: 0;
 }
+.accordion-content p{
+  font-size: 12px;
+}
 
 .imagen-lado-derecho {
     display: none;
@@ -718,9 +729,29 @@ display: none;
     align-items: center;
     margin: 20px;
   }   
+  .descripcion-servicio{
+    font-size: 12px;
+  }
   .banner img {
     max-height: 100px; /* Ajusta el tamaño de las imágenes para teléfonos móviles */
-}
-
-
+  }
+  .enterate{
+    font-size: 16px;
+  }
+  .beneficios, .ingresa-tu-mail{
+    font-size: 12px;
+  }
+  .puntosVenta ul li{
+    font-size: 12px;
+  }
+  .form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form .input{
+    width: 200px;
+    height: 10px;
+  }
+  
 }
