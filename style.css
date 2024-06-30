@@ -170,6 +170,9 @@ section p {
     padding: 10px;
     background-color:#F0E4B5;
 }
+.descripcion-servicio {
+  margin-bottom: 100px;
+}
 .servicios{
   display: grid;
   grid-template-columns: auto auto;
@@ -724,18 +727,19 @@ display: none;
     display: none;
   }
   .comprar{
-    height: 1500px;
+    height: 1700px;
+   }
+  .descripcion-servicio{
+    font-size: 12px;
+    margin-bottom: 250px;
   }
   .servicios{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
-    
   }   
-  .descripcion-servicio{
-    font-size: 12px;
-  }
+  
   .banner img {
     max-height: 100px; /* Ajusta el tamaño de las imágenes para teléfonos móviles */
   }
