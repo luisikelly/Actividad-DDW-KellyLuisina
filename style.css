@@ -714,7 +714,7 @@ section p {
    }
   .descripcion-servicio{
     font-size: 12px;
-    margin-bottom: 100px;
+    margin-bottom: 500px;
   }
   .servicios{
     display: flex;
@@ -722,6 +722,10 @@ section p {
     align-items: center;
     margin: 20px;
   }   
+  .fondo-img, .cerveza-icono{
+    width: 100px;
+    height: 100px;
+  }
   
   .banner img {
     max-height: 100px; /* Ajusta el tamaño de las imágenes para teléfonos móviles */
