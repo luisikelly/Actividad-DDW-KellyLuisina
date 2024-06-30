@@ -699,7 +699,7 @@ display: none;
       flex-direction: column;
   }
   .nosotros{
-    max-height: 600px;
+    max-height: 500px;
   }
   .nosotros-img{
       display: none;
@@ -711,26 +711,27 @@ display: none;
   .content {
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.accordion {
-    margin-right: 0;
-}
-.accordion-content p{
-  font-size: 12px;
-}
+  .accordion {
+      margin-right: 0;
+  }
+  .accordion-content p{
+    font-size: 12px;
+  }
 
-.imagen-lado-derecho {
+  .imagen-lado-derecho {
     display: none;
-}
+  }
   .comprar{
-    height: 2100px;
+    height: 1500px;
   }
   .servicios{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    
   }   
   .descripcion-servicio{
     font-size: 12px;
@@ -752,9 +753,12 @@ display: none;
     align-items: center;
     flex-direction: column;
   }
-  .form .input{
+  .input{
     width: 200px;
     height: 10px;
+  }
+  .btn{
+    font-size: 10px;
   }
   
 }
