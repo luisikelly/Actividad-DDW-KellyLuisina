@@ -351,28 +351,11 @@ section p {
     margin: 0 0.5rem;
 }
 
-.bars{
-  font-size: 2rem;
-  color: #F0E4B5;
-  float: left;
-  cursor: pointer;
-  display: none;
-  margin-left: 1rem;
-  padding: -2rem;
-  border-radius: -1rem;
-}
-.checkbox{
-  display: none;
-}
-
-
-/* SECTION: Nosotros*/
-
 /* SECTION: Nosotros*/
 .nosotros {
   padding: 20px;
   background-color: #ACBD78;
-  max-height: 500px;
+  max-height: 700px;
 }
 
 .titulo-seccion {
@@ -414,7 +397,7 @@ section p {
 
 .accordion-content {
   padding: 10px;
-display: none;
+
 }
 
 .accordion-title:hover {
@@ -702,7 +685,7 @@ display: none;
       flex-direction: column;
   }
   .nosotros{
-    max-height: 500px;
+    max-height: 600px;
   }
   .nosotros-img{
       display: none;
