@@ -692,6 +692,9 @@ display: none;
   .subtitulo-seccion{
     font-size: 16px;
   }
+  .productos h5{
+    font-size: 12px;
+  }
   .tipos-cervezas{
       flex-direction: column;
   }
