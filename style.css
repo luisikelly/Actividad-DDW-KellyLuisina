@@ -710,11 +710,11 @@ section p {
     display: none;
   }
   .comprar{
-    height: 1700px;
+    height: 1000px;
    }
   .descripcion-servicio{
     font-size: 12px;
-    margin-bottom: 450px;
+    margin-bottom: 50px;
   }
   .servicios{
     display: flex;
