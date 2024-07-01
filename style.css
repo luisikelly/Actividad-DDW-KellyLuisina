@@ -574,3 +574,13 @@ margin-top: 10px;
     display: none;
    }
 }
+
+@media (max-width: 500px) {
+  .comprar{
+    height: 1500px;
+   }
+  .descripcion-servicio{
+    font-size: 12px;
+    margin-bottom: 270px;
+  }
+}
