@@ -237,6 +237,7 @@ section p {
 
 /* SECTION: Servicios*/
 .comprar{
+  display: block;
   height: 1050px;
   padding: 10px;
   background-color:#F0E4B5;
@@ -469,6 +470,7 @@ margin-top: 10px;
   .menuppal ul li {
     list-style: none;
     text-align: center;
+    justify-content: center;
     font-size: 1.5rem;
     line-height: 3em;
     height: 3em;
@@ -528,6 +530,8 @@ margin-top: 10px;
    }
   .descripcion-servicio{
     font-size: 12px;
+  }
+  .info-prod{
     margin-bottom: 50px;
   }
   .servicios{
@@ -587,9 +591,9 @@ margin-top: 10px;
 
 @media (max-width: 320px) {
   .comprar{
-    height: 1650px;
+    height: 1700px;
    }
   .info-prod{
-    margin-bottom: 520px;
+    margin-bottom: 600px;
   }
 }
