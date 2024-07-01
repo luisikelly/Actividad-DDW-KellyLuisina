@@ -579,8 +579,17 @@ margin-top: 10px;
   .comprar{
     height: 1500px;
    }
-  .descripcion-servicio{
-    font-size: 12px;
-    margin-bottom: 270px;
+  .info-prod{
+    margin-bottom: 400px;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .comprar{
+    height: 1650px;
+   }
+  .info-prod{
+    margin-bottom: 520px;
   }
 }
