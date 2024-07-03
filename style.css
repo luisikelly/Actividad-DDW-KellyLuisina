@@ -237,7 +237,6 @@ section p {
 
 /* SECTION: Servicios*/
 .comprar{
-  display: block;
   height: 1150px;
   padding: 30px;
   background-color:#F0E4B5;
@@ -535,7 +534,6 @@ margin-top: 10px;
   }
 
   .comprar{
-    display: block;
     height: 1700px;
     font-size: 12px;
    }
@@ -588,4 +586,8 @@ margin-top: 10px;
     display: none;
    }
 }
+
+
+
+
 
