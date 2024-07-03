@@ -237,20 +237,20 @@ section p {
 
 /* SECTION: Servicios*/
 .comprar{
-  height: 1150px;
+  height: 1100px;
   padding: 30px;
   background-color:#F0E4B5;
 }
 .info-prod{
   padding: 30px;
+  padding-bottom: 0px;
 }
 
 .servicios{
   display: grid;
   grid-template-columns: auto auto;
   padding: 50px;
-  padding-top: 150px;
-  margin-bottom: 50px;
+  padding-top: 0px;
   margin-left: 50px;
 }
 .servicio{
