@@ -238,18 +238,26 @@ section p {
 /* SECTION: Servicios*/
 .comprar{
   display: block;
-  height: 1050px;
-  padding: 10px;
+  height: 1150px;
+  padding: 30px;
   background-color:#F0E4B5;
 }
 .info-prod{
-  margin-bottom: 170px;
+  padding: 30px;
 }
+
 .servicios{
-display: grid;
-grid-template-columns: auto auto;
-margin: 30px;
-margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px;
+  padding-top: 150px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+.servicio{
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
 }
 .servicio-icono{
 display: flex;
@@ -525,21 +533,23 @@ margin-top: 10px;
   .imagen-lado-derecho {
     display: none;
   }
+
   .comprar{
-    height: 1300px;
-   }
-  .descripcion-servicio{
+    display: block;
+    height: 1700px;
     font-size: 12px;
-  }
-  .info-prod{
-    margin-bottom: 50px;
-  }
-  .servicios{
+   }
+
+   .servicios{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    padding-top: 300px;
   }   
+  .servicio{
+    padding: 0px;
+  }
   .fondo-img, .cerveza-icono{
     width: 100px;
     height: 100px;
@@ -579,21 +589,3 @@ margin-top: 10px;
    }
 }
 
-@media (max-width: 480px) {
-  .comprar{
-    height: 1500px;
-   }
-  .info-prod{
-    margin-bottom: 400px;
-  }
-}
-
-
-@media (max-width: 320px) {
-  .comprar{
-    height: 1700px;
-   }
-  .info-prod{
-    margin-bottom: 600px;
-  }
-}
